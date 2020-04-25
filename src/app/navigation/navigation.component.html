@@ -1,0 +1,27 @@
+        <!--Main Navigation-->
+<nav id="nav-main">
+  <ul>
+    <li>
+      <a routerLink="/Home" (click)="getActiveTab('Home')" [class.active]="activeTab === 'Home'">Home</a>
+    </li>
+    <li>
+      <a routerLink="/About" (click)="getActiveTab('About')" [class.active]="activeTab === 'About'">About</a>
+    </li>
+    <li>
+      <a routerLink="/Gallery" (click)="getActiveTab('Gallery')" [class.active]="activeTab === 'Gallery'">Gallery</a>
+    </li>
+    <li>
+      <a routerLink="/Services" (click)="getActiveTab('Servies')" [class.active]="activeTab === 'Services'">Services</a>
+    </li>
+    <li>
+      <a routerLink="/Testimonials" (click)="getActiveTab('Testimonials')" [class.active]="activeTab === 'Testimonials'">Testimonials</a>
+    </li>
+    <li>
+      <a routerLink="/Clients" (click)="getActiveTab('Clients')" [class.active]="activeTab === 'Clients'">Clients</a>
+    </li>
+    <li>
+      <a routerLink="/Pricing" (click)="getActiveTab('Pricing')" [class.active]="activeTab === 'Pricing'">Pricing </a>
+    </li>
+  </ul>
+</nav>
+<!--End of Main Navigation-->

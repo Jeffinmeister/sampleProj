@@ -13,7 +13,13 @@ import { PricingComponent } from './pricing/pricing.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { SocialComponent } from './social/social.component';
-
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { BlogComponent } from './blog/blog.component';
+import { PostComponent } from './post/post.component';
+import { ArticleComponent } from './article/article.component';
+import { ConfigService } from './config.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,13 +32,19 @@ import { SocialComponent } from './social/social.component';
     PricingComponent,
     HeaderComponent,
     NavigationComponent,
-    SocialComponent
+    SocialComponent,
+    LoginComponent,
+    SignupComponent,
+    ContactusComponent,
+    BlogComponent,
+    PostComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

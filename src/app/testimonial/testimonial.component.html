@@ -9,39 +9,15 @@
     </div>
 
     <!--User Testimonial-->
-    <blockquote class="col-3 testimonial classic">
-      <img src="../assets/images/user-images/user-1.jpg" alt="User" />
-      <q>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore
-        et dolore magna aliqua
-      </q>
-      <footer>John Doe - Happy Customer</footer>
+    <blockquote class="col-3 testimonial classic" *ngFor="let feature of testimonials.features">
+      
+        <img src="../assets/images/user-images/{{ feature.image }}" alt="User" />
+        <q>{{ feature.description }}</q>
+        <footer>{{ feature.name }}</footer>
+      
     </blockquote>
     <!-- End of Testimonial-->
-    <!--User Testimonial-->
-    <blockquote class="col-3 testimonial classic">
-      <img src="../assets/images/user-images/user-2.jpg" alt="User" />
-      <q>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore
-        et dolore magna aliqua
-      </q>
-      <footer>Roslyn Doe - Happy Customer</footer>
-    </blockquote>
-    <!-- End of Testimonial-->
-    <!--User Testimonial-->
-    <blockquote class="col-3 testimonial classic">
-      <img src="../assets/images/user-images/user-3.jpg" alt="User" />
-      <q>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore
-        et dolore magna aliqua
-      </q>
-      <footer>Thomas Doe - Happy Customer</footer>
-    </blockquote>
-    <!-- End of Testimonial-->
-
+   
   </div>
 
 </aside>

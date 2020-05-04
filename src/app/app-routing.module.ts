@@ -7,6 +7,9 @@ import { ContentComponent } from './content/content.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { ClientsComponent } from './clients/clients.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { RouteguardService } from './routeguard.service'; 
+import { BlogComponent } from './blog/blog.component';
+import { ArticleComponent } from './article/article.component';
 
 
 const routes: Routes = [
@@ -17,7 +20,11 @@ const routes: Routes = [
   { path: 'Services', component: ContentComponent },
   { path: 'Testimonials', component: TestimonialComponent },
   { path: 'Clients', component: ClientsComponent },
-  { path: 'Pricing', component: PricingComponent }
+  { path: 'Pricing', component: PricingComponent },
+  { path: 'Blog', component: BlogComponent },
+  { path: 'Article/:id', component: ArticleComponent },
+  
+
 ];
 
 @NgModule({

@@ -1,4 +1,4 @@
-        <!--Main Navigation-->
+ <!--Main Navigation-->
 <nav id="nav-main">
   <ul>
     <li>
@@ -21,6 +21,9 @@
     </li>
     <li>
       <a routerLink="/Pricing" (click)="getActiveTab('Pricing')" [class.active]="activeTab === 'Pricing'">Pricing </a>
+    </li>
+    <li>
+    <a routerLink="/Blog" (click)="getActiveTab('blog')" [class.active]="activeTab === 'Blog'">Blog </a>
     </li>
   </ul>
 </nav>

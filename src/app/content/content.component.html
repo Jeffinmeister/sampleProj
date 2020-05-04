@@ -8,12 +8,8 @@
     <div class="col-3">
       <!--User Testimonial-->
       <blockquote class="testimonial text-right bigtest">
-        <q>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore
-          et dolore magna aliqua
-        </q>
-        <footer>— John Doe, Happy Customer</footer>
+        <q>{{ services.quote }}</q>
+        <footer>{{ services.name }}</footer>
       </blockquote>
       <!-- End of Testimonial-->
 
@@ -22,12 +18,9 @@
     <!--Content of the Right Side-->
     <div class="col-3">
       <div class="section-heading">
-        <h3>BELIEVING</h3>
-        <h2 class="section-title">Focusing On What Matters Most</h2>
-        <p class="section-subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!
-        </p>
+        <h3>{{ services.tagline }}</h3>
+        <h2 class="section-title">{{ services.title }}</h2>
+        <p class="section-subtitle">{{ services.description }}</p>
       </div>
       <p>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,

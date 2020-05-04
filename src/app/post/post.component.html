@@ -1,0 +1,13 @@
+<div class="post-block col-3 wow fadeInUp" data-wow-delay="0.4s" *ngFor="let plan of pricing.plans " [class.featured]="plan.featured">
+  <div class="post-block-content">
+    <h3>{{post.title}}</h3>
+    <p class="post-sub">{{post.author}} | {{ post.publishDate | date:'dd-MMM-yyyy' }}</p>
+    <div class="post img.featured">
+      <img src="../assets/images/gallery-images/{{post.image}}">      
+    </div>
+    <ul>
+      {{post.excert}}
+    </ul>
+    <a routerLink="/article/{{post.id}}" class="">Read More..</a>
+  </div>
+</div>

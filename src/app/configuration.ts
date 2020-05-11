@@ -72,17 +72,11 @@ export const configuration = {
     ]
   },
 
-  gallery: {
+  gallery: [
 
-    images: [
-      'gallery-image-1.jpg',
-      'gallery-image-2.jpg',
-      'gallery-image-3.jpg',
-      'gallery-image-4.jpg',
-      'gallery-image-5.jpg',
-      'gallery-image-6.jpg',
-    ]
-  },
+      'gallery-image-1.jpg','gallery-image-2.jpg','gallery-image-3.jpg','gallery-image-4.jpg','gallery-image-5.jpg','gallery-image-6.jpg'
+    
+  ],
 
   footer: {
     copyrightText: 'Made in association with ',

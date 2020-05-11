@@ -20,6 +20,7 @@ import { BlogComponent } from './blog/blog.component';
 import { PostComponent } from './post/post.component';
 import { ArticleComponent } from './article/article.component';
 import { ConfigService } from './config.service';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,8 @@ import { ConfigService } from './config.service';
     ContactusComponent,
     BlogComponent,
     PostComponent,
-    ArticleComponent
+    ArticleComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

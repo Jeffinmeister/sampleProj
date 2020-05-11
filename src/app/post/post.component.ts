@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../config.service';
 
 @Component({
   selector: 'app-post',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
-  constructor() { }
+  posts:any;
 
-  ngOnInit(): void {
+  constructor(private config: ConfigService) { }
+
+  ngOnInit() {
+    this.posts = this.getblog();
+  }
+
+  getblog() {
+    return this.config.getconfig().blog;
   }
 
 }

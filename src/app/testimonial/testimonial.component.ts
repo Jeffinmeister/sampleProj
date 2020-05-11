@@ -8,7 +8,7 @@ import { ConfigService } from '../config.service';
 })
 export class TestimonialComponent implements OnInit {
 
-  testimonials = { };
+  testimonials:any;
   constructor(private config: ConfigService) { }
 
   ngOnInit() {

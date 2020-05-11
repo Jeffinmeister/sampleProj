@@ -8,9 +8,7 @@ import { ConfigService } from '../config.service';
 })
 export class BlogComponent implements OnInit {
 
-  blog = {
-
-  };
+  blog:any;
 
   constructor(private config: ConfigService) { }
 
